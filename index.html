@@ -8,6 +8,14 @@
       name="description"
       content="Aaron Okrainsky is a Rutgers Honors College biomedical engineering student focused on CAD, prototyping, and medical device design."
     >
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.164.1/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.164.1/examples/jsm/"
+        }
+      }
+    </script>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
@@ -93,7 +101,7 @@
         </div>
 
         <div class="featured-project braceforge-feature">
-          <div>
+          <div class="braceforge-copy">
             <p class="eyebrow">BraceForge</p>
             <h3>Custom wrist brace design, ready for 3D printing.</h3>
             <p>
@@ -102,10 +110,35 @@
               preview, supports left/right brace orientation, and exports generated geometry as
               STL or 3MF for slicer review and printing.
             </p>
+            <a class="braceforge-cta" href="https://braceforge.aaronokrainsky.com/" target="_blank" rel="noreferrer">
+              Open BraceForge
+            </a>
           </div>
-          <a class="braceforge-cta" href="https://braceforge.aaronokrainsky.com/" target="_blank" rel="noreferrer">
-            Open BraceForge
-          </a>
+          <div class="braceforge-model-panel" aria-label="Scroll-reactive 3D BraceForge wrist brace preview">
+            <div id="braceViewport" role="img" aria-label="3D wrist brace model preview"></div>
+            <div class="model-status">Scroll to spin the generated brace.</div>
+          </div>
+        </div>
+
+        <div class="home-preview-inputs" aria-hidden="true" data-home-preview="true">
+          <input id="wristCirc" type="number" value="220">
+          <input id="foreWristLength" type="number" value="100">
+          <input id="wristHeight" type="number" value="52">
+          <input id="wristWidth" type="number" value="65">
+          <input id="metacarpalHeight" type="number" value="28">
+          <input id="metacarpalWidth" type="number" value="100">
+          <input id="wristMetaLength" type="number" value="80">
+          <input id="thumbWidth" type="number" value="60">
+          <input id="thumbHeight" type="number" value="60">
+          <input id="metaToThumbLength" type="number" value="80">
+          <input id="velcroThickness" type="number" value="4">
+          <input id="ventilation" type="range" value="0">
+          <select id="filamentType"><option value="petg" selected>PETG</option></select>
+          <span id="ventilationValue"></span>
+          <span id="printTime"></span>
+          <span id="filamentUse"></span>
+          <span id="filamentCost"></span>
+          <span id="filamentPrice"></span>
         </div>
 
         <div class="project-grid project-grid-compact">
@@ -210,5 +243,6 @@
       </footer>
     </main>
     <script src="script.js"></script>
+    <script type="module" src="braceforge-render.js"></script>
   </body>
 </html>
