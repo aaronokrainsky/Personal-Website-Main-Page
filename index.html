@@ -16,12 +16,11 @@
         }
       }
     </script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=2">
   </head>
   <body>
     <header class="site-header">
       <a class="brand" href="#top" aria-label="Aaron Okrainsky home">
-        <span class="brand-mark">AO</span>
         <span>Aaron Okrainsky</span>
       </a>
       <nav class="site-nav" aria-label="Primary navigation">
@@ -47,11 +46,11 @@
           <p class="hero-copy">
             I am focused on CAD-driven medical device design, 3D printing, ergonomic systems,
             and practical prototyping. My current main project is BraceForge: a web-based tool
-            for designing custom wrist braces from real hand measurements.
+            for designing custom wrist braces from patient-specific measurements.
           </p>
           <div class="hero-actions" aria-label="Primary actions">
             <a class="button primary" href="#braceforge">View BraceForge</a>
-            <a class="button secondary" href="assets/Aaron-Okrainsky-Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+            <a class="button resume-button" href="assets/Aaron-Okrainsky-Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
           </div>
         </div>
       </section>
@@ -69,7 +68,7 @@
               R&amp;D, hardware engineering, prosthetics, and ergonomic product design.
             </p>
           </article>
-          <article class="about-panel accent">
+          <article class="about-panel">
             <h3>Technical toolkit</h3>
             <ul class="focus-list">
               <li>SolidWorks, Onshape, MATLAB, and R</li>
@@ -84,7 +83,7 @@
             </div>
             <div>
               <strong>CSWA</strong>
-              <span>SolidWorks certified</span>
+              <span>Certified SolidWorks Associate</span>
             </div>
             <div>
               <strong>4.0</strong>
@@ -111,11 +110,17 @@
               BraceForge is a browser-based configurator for designing a two-part wrist brace
               from forearm, wrist, palm, and thumb measurements. It provides an interactive 3D
               preview, supports left/right brace orientation, and exports generated geometry as
-              STL or 3MF for slicer review and printing.
+              STL or 3MF for slicer review and printing. The case study walks through the design
+              goals, iterations, and engineering decisions behind the project.
             </p>
-            <a class="braceforge-cta" href="https://braceforge.aaronokrainsky.com/" target="_blank" rel="noreferrer">
-              Open BraceForge
-            </a>
+            <div class="braceforge-actions" aria-label="BraceForge links">
+              <a class="braceforge-cta" href="https://braceforge.aaronokrainsky.com/" target="_blank" rel="noreferrer">
+                Open BraceForge
+              </a>
+              <a class="braceforge-cta secondary" href="https://braceforge.aaronokrainsky.com/case-study" target="_blank" rel="noreferrer">
+                Read Case Study
+              </a>
+            </div>
           </div>
           <div class="braceforge-model-panel" aria-label="Scroll-reactive 3D BraceForge wrist brace preview">
             <div id="braceViewport" role="img" aria-label="3D wrist brace model preview"></div>
@@ -182,7 +187,7 @@
             </div>
             <p>
               The generated brace can be exported as STL or 3MF and checked in slicer software
-              before printing. The project includes clear printing instructions.
+              before printing. The project includes a clear printing guide.
             </p>
           </article>
         </div>
@@ -237,13 +242,7 @@
           <a href="assets/Aaron-Okrainsky-Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
         </div>
       </section>
-
-      <footer class="site-footer" aria-label="Site stats">
-        <span>Local site views</span>
-        <strong id="view-count">0</strong>
-      </footer>
     </main>
-    <script src="script.js"></script>
     <script type="module" src="braceforge-render.js"></script>
   </body>
 </html>

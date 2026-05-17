@@ -61,20 +61,8 @@ a {
 }
 
 .brand {
-  gap: 10px;
   font-weight: 800;
   text-decoration: none;
-}
-
-.brand-mark {
-  display: grid;
-  width: 42px;
-  height: 34px;
-  place-items: center;
-  color: #fffaf0;
-  background: linear-gradient(135deg, var(--coral), #e56b53);
-  border-radius: 8px;
-  font-size: 0.82rem;
 }
 
 .site-nav {
@@ -206,14 +194,38 @@ h3 {
 
 .button.primary {
   color: #111318;
-  background: linear-gradient(135deg, var(--ink), #ffe1a1);
-  box-shadow: 0 16px 34px rgba(240, 189, 89, 0.22);
+  background: linear-gradient(135deg, #ffd477, var(--brace-gold));
+  border-color: rgba(255, 250, 240, 0.34);
+  box-shadow: 0 16px 34px rgba(180, 135, 62, 0.28);
+}
+
+.button.primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 44px rgba(180, 135, 62, 0.4);
 }
 
 .button.secondary {
-  color: var(--ink);
-  background: rgba(247, 243, 234, 0.08);
-  border-color: var(--line);
+  color: #fffaf0;
+  background: rgba(247, 243, 234, 0.12);
+  border-color: rgba(255, 250, 240, 0.48);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
+}
+
+.button.secondary:hover {
+  background: rgba(247, 243, 234, 0.18);
+  border-color: rgba(240, 189, 89, 0.72);
+}
+
+.button.resume-button {
+  color: #101714;
+  background: linear-gradient(135deg, #ffd477, var(--brace-gold));
+  border-color: rgba(255, 250, 240, 0.34);
+  box-shadow: 0 16px 34px rgba(180, 135, 62, 0.28);
+}
+
+.button.resume-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 20px 44px rgba(180, 135, 62, 0.4);
 }
 
 .intro-band,
@@ -247,10 +259,6 @@ h3 {
 
 .about-panel {
   padding: 26px;
-}
-
-.about-panel.accent {
-  background: #20302a;
 }
 
 .about-panel p,
@@ -369,6 +377,13 @@ h3 {
   font-size: clamp(1.35rem, 3vw, 2.1rem);
 }
 
+.braceforge-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
+
 .braceforge-cta {
   display: inline-flex;
   align-items: center;
@@ -385,7 +400,6 @@ h3 {
   text-decoration: none;
   transition: transform 180ms ease, box-shadow 180ms ease;
   justify-self: start;
-  margin-top: 22px;
 }
 
 .braceforge-cta::after {
@@ -393,9 +407,21 @@ h3 {
   margin-left: 10px;
 }
 
+.braceforge-cta.secondary {
+  color: var(--ink);
+  background: rgba(21, 84, 63, 0.56);
+  border-color: rgba(240, 189, 89, 0.62);
+  box-shadow: 0 14px 34px rgba(21, 84, 63, 0.28);
+}
+
 .braceforge-cta:hover {
   transform: translateY(-3px);
   box-shadow: 0 24px 54px rgba(180, 135, 62, 0.48);
+}
+
+.braceforge-cta.secondary:hover {
+  border-color: rgba(255, 212, 119, 0.86);
+  box-shadow: 0 20px 44px rgba(21, 84, 63, 0.38);
 }
 
 .braceforge-model-panel {
@@ -600,29 +626,6 @@ h3 {
   background: var(--panel);
   font-weight: 800;
   text-decoration: none;
-}
-
-.site-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 18px clamp(18px, 6vw, 80px) 28px;
-  border-top: 1px solid var(--line);
-  color: var(--muted);
-  background: #111516;
-  font-size: 0.92rem;
-  font-weight: 800;
-}
-
-.site-footer strong {
-  min-width: 42px;
-  padding: 7px 10px;
-  border: 1px solid rgba(180, 135, 62, 0.48);
-  border-radius: 8px;
-  color: #101714;
-  background: var(--amber);
-  text-align: center;
 }
 
 @media (max-width: 900px) {

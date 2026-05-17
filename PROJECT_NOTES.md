@@ -167,12 +167,7 @@ Verification performed:
 
 ## View Counter Note
 
-The current view counter is local only:
-
-- Implemented in `script.js`
-- Uses browser `localStorage`
-- Counts visits on the same browser/device
-- It is not a public/global counter
+The local view counter was removed from the public page.
 
 For a real public view counter after deployment, add a backend or service such as:
 
@@ -199,9 +194,30 @@ http://127.0.0.1:5173/
 The page has already been verified locally with HTTP 200 responses for:
 
 - `/`
-- `/script.js`
 - `/assets/hero-bme-prototyping.png`
 - `/assets/Aaron-Okrainsky-Resume.pdf`
+
+## Vercel Launch Prep
+
+The personal site is prepared as a static Vercel deployment:
+
+- `vercel.json` enables clean URLs and disables trailing slashes.
+- `.vercelignore` excludes local IDE, git, and temporary files from deployment upload.
+- `README.md` documents local development and recommended Vercel settings.
+- No build step is required.
+
+Recommended Vercel settings:
+
+- Framework Preset: Other
+- Build Command: leave empty
+- Output Directory: `.`
+- Install Command: leave empty
+
+## Live BraceForge Links
+
+- BraceForge app: `https://braceforge.aaronokrainsky.com/`
+- BraceForge case study: `https://braceforge.aaronokrainsky.com/case-study`
+- The personal website links to both from the BraceForge project section.
 
 ## Git / GitHub History
 
