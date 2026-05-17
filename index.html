@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Aaron Okrainsky | Biomedical Engineering</title>
+    <meta
+      name="description"
+      content="Aaron Okrainsky is a Rutgers Honors College biomedical engineering student focused on CAD, prototyping, and medical device design."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Aaron Okrainsky home">
+        <span class="brand-mark">AO</span>
+        <span>Aaron Okrainsky</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#braceforge">BraceForge</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="Introduction">
+        <img
+          class="hero-image"
+          src="assets/hero-bme-prototyping.png"
+          alt="Biomedical engineering prototyping workspace with CAD tools and a 3D printed wrist brace concept."
+        >
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow">Biomedical engineering + device prototyping</p>
+          <h1>Aaron Okrainsky</h1>
+          <p class="hero-kicker">BME student, Rutgers Honors College, School of Engineering '29</p>
+          <p class="hero-copy">
+            I am focused on CAD-driven medical device design, 3D printing, ergonomic systems,
+            and practical prototyping. My current main project is BraceForge: a web-based tool
+            for designing custom wrist braces from real hand measurements.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button primary" href="#braceforge">View BraceForge</a>
+            <a class="button secondary" href="assets/Aaron-Okrainsky-Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-band" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow">About</p>
+          <h2 id="about-title">Building at the intersection of anatomy, CAD, and manufacturable design.</h2>
+        </div>
+        <div class="about-grid">
+          <article class="about-panel">
+            <h3>Engineering focus</h3>
+            <p>
+              Biomedical engineering student with a 4.0 GPA, interested in medical device
+              R&amp;D, hardware engineering, prosthetics, and ergonomic product design.
+            </p>
+          </article>
+          <article class="about-panel accent">
+            <h3>Technical toolkit</h3>
+            <ul class="focus-list">
+              <li>SolidWorks, Onshape, MATLAB, and R</li>
+              <li>CAD modeling, FEA, parametric design, and engineering drawings</li>
+              <li>3D printing, rapid iteration, and prototype testing</li>
+            </ul>
+          </article>
+          <article class="stats-panel" aria-label="Quick facts">
+            <div>
+              <strong>BME</strong>
+              <span>Rutgers SOE '29</span>
+            </div>
+            <div>
+              <strong>CSWA</strong>
+              <span>SolidWorks certified</span>
+            </div>
+            <div>
+              <strong>4.0</strong>
+              <span>current GPA</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="projects-section" id="braceforge" aria-labelledby="braceforge-title">
+        <div class="section-heading">
+          <p class="eyebrow">Main project</p>
+          <h2 id="braceforge-title">BraceForge turns patient measurements into printable brace geometry.</h2>
+        </div>
+
+        <div class="featured-project braceforge-feature">
+          <div>
+            <p class="eyebrow">BraceForge</p>
+            <h3>Custom wrist brace design, ready for 3D printing.</h3>
+            <p>
+              BraceForge is a browser-based configurator for designing a two-part wrist brace
+              from forearm, wrist, palm, and thumb measurements. It provides an interactive 3D
+              preview, supports left/right brace orientation, and exports generated geometry as
+              STL or 3MF for slicer review and printing.
+            </p>
+          </div>
+          <a class="braceforge-cta" href="https://braceforge.aaronokrainsky.com/" target="_blank" rel="noreferrer">
+            Open BraceForge
+          </a>
+        </div>
+
+        <div class="project-grid project-grid-compact">
+          <article class="project-card">
+            <div class="project-card-header">
+              <div>
+                <p class="eyebrow">Measure</p>
+                <h3>Anthropometric inputs</h3>
+              </div>
+              <span class="project-token" aria-hidden="true">01</span>
+            </div>
+            <p>
+              Uses real hand and wrist dimensions, including wrist circumference, metacarpal
+              width, thumb opening, shell length, and Velcro thickness.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-header">
+              <div>
+                <p class="eyebrow">Preview</p>
+                <h3>Interactive CAD-like model</h3>
+              </div>
+              <span class="project-token" aria-hidden="true">02</span>
+            </div>
+            <p>
+              A Three.js preview lets users orbit, zoom, and inspect brace features such as
+              thumb clearance, strap slots, smooth edges, and optional ventilation.
+            </p>
+          </article>
+
+          <article class="project-card">
+            <div class="project-card-header">
+              <div>
+                <p class="eyebrow">Export</p>
+                <h3>3D-print workflow</h3>
+              </div>
+              <span class="project-token" aria-hidden="true">03</span>
+            </div>
+            <p>
+              The generated brace can be exported as STL or 3MF and checked in slicer software
+              before printing. The project includes clear printing instructions and a medical
+              disclaimer.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="experience-section" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2 id="experience-title">Relevant engineering and clinical context.</h2>
+        </div>
+
+        <div class="timeline">
+          <article>
+            <span>Rutgers RU-ENABLE</span>
+            <h3>EGC Representative</h3>
+            <p>
+              Supporting prosthetics-focused design work by helping coordinate materials,
+              logistics, and iterative CAD prototypes for under-resourced communities.
+            </p>
+          </article>
+          <article>
+            <span>Rutgers Formula Racing</span>
+            <h3>Ergonomics Team Member</h3>
+            <p>
+              Working on throttle, steering, and driver-interface systems, including 3D printed
+              testing fixtures, SolidWorks FEA, and manufacturing-ready drawings.
+            </p>
+          </article>
+          <article>
+            <span>Clinical experience</span>
+            <h3>Medical Assistant</h3>
+            <p>
+              Assisted with patient workflow, vitals, medical histories, diagnostic testing,
+              scheduling, and EMR updates in a pediatric urgent care environment.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-band" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Let's talk biomedical engineering, medical devices, or prototypes.</h2>
+          <p>
+            I am especially interested in Summer 2026 internship or co-op opportunities in
+            medical device R&amp;D, hardware engineering, CAD, and prototyping.
+          </p>
+        </div>
+        <div class="contact-links">
+          <a href="mailto:aaronokrainsky@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/aaron-okrainsky/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="assets/Aaron-Okrainsky-Resume.pdf" target="_blank" rel="noreferrer">Resume</a>
+        </div>
+      </section>
+
+      <footer class="site-footer" aria-label="Site stats">
+        <span>Local site views</span>
+        <strong id="view-count">0</strong>
+      </footer>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
