@@ -61,8 +61,16 @@ a {
 }
 
 .brand {
+  gap: 12px;
   font-weight: 800;
   text-decoration: none;
+}
+
+.brand img {
+  display: block;
+  width: 72px;
+  height: 34px;
+  object-fit: contain;
 }
 
 .site-nav {
