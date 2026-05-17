@@ -28,3 +28,16 @@ Recommended Vercel settings:
 - Install Command: leave empty
 
 The included `vercel.json` enables clean URLs and disables trailing slashes.
+
+## Analytics
+
+Vercel Web Analytics is wired into `index.html` using the static HTML script snippet:
+
+```html
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+```
+
+Analytics data will only collect after Web Analytics is enabled in the Vercel dashboard and this change is deployed to Vercel.
