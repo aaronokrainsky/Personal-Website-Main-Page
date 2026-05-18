@@ -41,3 +41,7 @@ Vercel Web Analytics is wired into `index.html` using the static HTML script sni
 ```
 
 Analytics data will only collect after Web Analytics is enabled in the Vercel dashboard and this change is deployed to Vercel.
+
+## License
+
+All rights reserved. See `LICENSE.md` for permitted use and restrictions.
